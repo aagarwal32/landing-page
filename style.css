@@ -161,6 +161,9 @@ a:hover {
 
 img {
     border-radius: 30px;
+    max-width: 100%;
+    min-width: 400px;
+    height: auto;
 }
 
 button {
