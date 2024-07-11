@@ -51,17 +51,18 @@ body {
     flex-shrink: 1;
     flex-direction: column;
     margin-right: auto;
-    flex-basis: 50%;
+    flex-basis: 500px;
     gap: 24px;
 }
 
 #title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 4em;
 }
 
 #sub-title {
     color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
 }
 
 .content.two {
@@ -96,11 +97,39 @@ body {
 }
 
 .content.three {
-    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    justify-content: center;
+    padding: 15vh 50vh;
+    gap: 24px;
+}
+
+.content.three div{
+    font-size: 1.5em;
+    font-style: italic;
+    color: #292d33;
 }
 
 .content.four {
-    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+}
+
+.content.four .call-to-action {
+    display: flex;
+    align-items: center;
+    background-color: #1770ff;
+    color: white;
+    padding: 24px 10vw;
+    gap: 10vw;
+    margin: 60px;
+    border-radius: 30px;
+}
+
+.action-button button{
+    border: solid white;
+    background-color: #1770ff;
 }
 
 .footer {
@@ -111,6 +140,11 @@ body {
     color: #E5E7EB;
 }
 
+h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -119,6 +153,10 @@ ul {
 
 a, a:visited {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 img {
@@ -134,7 +172,7 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
 button:hover {
